@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Meu Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- ICONS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- ICONS -->
+    <title>Portifolio Geovanna</title>
 </head>
 <body>
-  <h1>Olá, mundo!</h1>
-  <p>Este é meu site no GitHub Pages.</p>
+    <header>
+        <div class="hud">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/logo.png" alt="logosite">
+                </a>
+            </div> <!--Logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a>
+                    <button>Contato</button>
+                </a>
+            </div><!--Btn-contato-->
+        </div><!--HUD-->
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="hud">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>
+                            Lorem ipsum dolor sit amet. Sit animi porro sed deleniti<span>.</span>
+                        </h1>
+                        <p>A alias necessitatibus est galisum soluta est minima nobis ut incidunt impedit quo perspiciatis 
+                        tempore et provident doloribus? Sed illo quia At pariatur aperiam aut quia facere eos.</p>
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Linkedin</button>
+                            </a>
+                        </div><!--btn-contato-->
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="assets/foto.png" alt="owner">
+                    </div><!--img-topo-site-->
+                </div>
+            </div><!--hud interface-->
+        </section><!--topo-->
+
+        <section class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>HABILIDADES</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-php"></i>
+                        <h3>PHPBackEnd</h3>
+                        <p>A alias necessitatibus est galisum soluta est minima nobis ut incidunt impedit
+                        quo perspiciatis tempore et provident doloribus?.</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-exe"></i>
+                        <h3>Developer Software</h3>
+                        <p>A alias necessitatibus est galisum soluta est minima nobis ut incidunt impedit
+                        quo perspiciatis tempore et provident doloribus?.</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-unlock-fill"></i>
+                        <h3>DevOps</h3>
+                        <p>A alias necessitatibus est galisum soluta est minima nobis ut incidunt impedit
+                        quo perspiciatis tempore et provident doloribus?.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+
+        <section class="sobre">
+            <div class="interface">
+                
+            </div>
+        </section>
+    </main><!--Conteudo principal-->
 </body>
+<script src="src/script.js"></script>
 </html>
