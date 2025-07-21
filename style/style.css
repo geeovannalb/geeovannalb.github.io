@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(5, 178, 212);
+    background-color: whitesmoke;
     height: 100vh; /*espaço todo*/
 }
 
@@ -68,7 +68,7 @@ header a{
 }
 
 header a:hover{
-    color: #e0d8d8;
+    color: #616060;
     transform: scale(1.2);
 }
 
@@ -132,9 +132,13 @@ section.especialidades{
     padding: 40px 4%;
 }
 
-section.especialidades .flex{
-    gap: 65px;
+section.especialidades .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
 }
+
 
 .especialidades .especialidades-box{
     color: black;
@@ -143,6 +147,9 @@ section.especialidades .flex{
     margin-top: 29px;
     border-radius: 20px;
     transition: .3s;
+    width: calc(33.33% - 43px);
+    min-width: 280px;
+    box-sizing: border-box;
 }
 
 .especialidades .especialidades-box:hover{
@@ -152,10 +159,31 @@ section.especialidades .flex{
 .especialidades .especialidades-box i{
     font-size: 55px;
 }
+.especialidades .especialidades-box img{
+    width: 130px;
+    height: auto;
+}
 
 .especialidades .especialidades-box h3{
     font-size: 28px;
     margin: 12px 0;
+}
+
+.r-linguagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.r-linguagens img{
+    width: 60px;
+    height: auto;
+}
+.r-linguagens span{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(4, 0, 255);
 }
 
 
@@ -192,9 +220,57 @@ section.sobre .flex{
     height: 65px;
     border-radius: 50%;
     border: none;
-    background-color: aquamarine;
+    background-color: rgb(4,0,255);
     font-size: 25px;
     cursor: pointer;
     margin: 0 15px;
     transition: .2s;
+}
+
+/* ESTILO DA SEÇÃO PROJETOS */
+
+section.projetos{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgb(208, 192, 164);
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.img-proj{
+    width: 360px;
+    height: 460px;
+    background-color: rgb(69, 69, 238);
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+.img-proj:hover{
+    /*rolagem*/
+    background-position: 100% 100%;
+}
+
+.overlay-projs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.56);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 800px;
+    color: rgb(4,0,255);
+    opacity: 0;
+    transition: .5s;
+}
+.overlay-projs:hover{
+    opacity: 1;
 }
