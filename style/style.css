@@ -28,7 +28,7 @@ body{
     border: 0;
     border-radius: 20px;
     cursor: pointer;
-    transition: .2s;
+    transition: .4s;
 }
 
 img{
@@ -44,9 +44,9 @@ h2.titulo{
 h2.titulo span{
     color: rgb(62, 0, 249);
 }
-button:hover{
+button:hover, form .btn-enviar input:hover{
     box-shadow: 0px 0px 8px rgba(74, 163, 33, 0.862);
-    transform: scale(1.2);
+    transform: scale(1);
 }
 /* Estilo do cabeçalho */
 header{
@@ -224,7 +224,7 @@ section.sobre .flex{
     font-size: 25px;
     cursor: pointer;
     margin: 0 15px;
-    transition: .2s;
+    transition: .4s;
 }
 
 /* ESTILO DA SEÇÃO PROJETOS */
@@ -274,3 +274,51 @@ section.projetos .flex{
 .overlay-projs:hover{
     opacity: 1;
 }
+
+/* estilo do form */
+section.formulario{
+    padding: 80px 4%;
+
+}
+form{
+    max-width: 500px;
+    margin: 0 auto; /*centralizar*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:12px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(72, 72, 72, 0.982);
+    border: none;
+    outline: none;
+    padding:25px 15px;
+    border-radius:20px;
+    color: #fff;
+    font-size: 15px;
+}
+form input::placeholder{
+    color: #fff;
+}
+
+form textarea{
+    resize: none;
+    max-height: 350px;
+}
+
+form .btn-enviar{
+    margin-top:20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color:  rgb(4,0,255);
+    color: #fff;
+    font-weight: 800;
+    cursor:pointer;
+    transition: .4s;
+}
+
+/* footer */
