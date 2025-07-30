@@ -7,6 +7,10 @@
     font-family: 'Montserrat';
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: whitesmoke;
     height: 100vh; /*espaço todo*/
@@ -317,8 +321,11 @@ form .btn-enviar input{
     background-color:  rgb(4,0,255);
     color: #fff;
     font-weight: 800;
-    cursor:pointer;
+    cursor: pointer;
     transition: .4s;
 }
 
 /* footer */
+footer{
+    
+}
